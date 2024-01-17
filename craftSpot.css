@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --text-color: #fff;
+    --bg-color: rgb(37, 33, 33);
+    --big-font: 5rem;
+    --h2-font: 2.25rem;
+    --p-font: 0.9rem;
+    --second-color: #000000;
+    --cta-color: #feeee7;
+}
+/* ::selection{
+    background: var(--main-color);
+    color: #fff ;
+} */
+body{
+    background-color: var(--second-color);
+    color: var(--text-color);
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 170px;
+    background-color: var(--bg-color);
+}
+.logo{
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+.navbar{
+    display: flex;    
+}
+.navbar a{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+.navbar a:hover{
+    color: var(--main-color);
+    transition: .4s;
+}
+.what{
+    margin-top: 6em;
+    padding: 0 3em;
+}
+section{
+    margin-top: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+    grid-gap: 12rem;
+}
+.about p{
+    margin-top: 1em;
+}
+.see .display{
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    grid-gap: 2px;
+}
+.see img{
+    max-width: 90%;
+    width: 400px;
+    height: 8rem;
+    border-radius: 12px;
+}
+.goHome, .copy{
+    display: flex;
+    justify-content: center;
+    padding: 8px; 
+    width: 100%;
+}
+.goHome{
+    margin-top: 2em;
+    background-color: var(--bg-color);  
+}
+.goHome a{
+    color: var(--text-color);
+    font-weight: bold;
+}
+.copy{
+    margin-top: 4em;
+}
